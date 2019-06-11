@@ -14,10 +14,17 @@
 
 # Couleur !
 
+CLEAR		= \033[2K
+UP 			= \033[A
 END			= \033[0m
 
 RED			= \033[0;31m
 GREEN		= \033[0;32m
+YELLOW		= \033[0;33m
+BLUE		= \033[0;34m
+VIOLET		= \033[0;35m
+CYAN		= \033[0;36m
+WHITE		= \033[0;37m
 
 #**************************************************#
 
@@ -97,6 +104,7 @@ SRC =	ft_memset.c					\
 		ft_sort_integer_table.c		\
 		ft_print_words_tables.c		\
 		ft_strndup.c				\
+		get_next_line.c				\
 
 OBJ = $(SRC:.c=.o)
 

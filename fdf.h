@@ -6,7 +6,7 @@
 /*   By: floakoud <floakoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 12:08:17 by floakoud          #+#    #+#             */
-/*   Updated: 2019/06/11 13:31:20 by floakoud         ###   ########.fr       */
+/*   Updated: 2019/06/11 15:11:52 by floakoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,16 @@
 
 typedef struct	s_e
 {	
-
+	int		x1;
+	int		x2;
+	int		y1;
+	int		y2;
+	int		ex;
+	int		ey;
+	int		Dx;
+	int		Dy;
+	int		Xincr;
+	int		Yincr;
 }				s_t;
 
 int     main();

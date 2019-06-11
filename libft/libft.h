@@ -6,16 +6,19 @@
 /*   By: floakoud <floakoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/28 09:04:16 by floakoud          #+#    #+#             */
-/*   Updated: 2019/03/18 16:23:30 by floakoud         ###   ########.fr       */
+/*   Updated: 2019/06/11 15:23:31 by floakoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <string.h>
-# include <stdlib.h>
 # include <unistd.h>
+# include <stdlib.h>
+# include <fcntl.h>
+# include "libft/libft.h"
+
+# define BUFF_SIZE 42
 
 typedef	struct		s_list
 {
@@ -23,6 +26,15 @@ typedef	struct		s_list
 	size_t			content_size;
 	struct s_list	*next;
 }					t_list;
+
+typedef struct	s_gnl
+{
+	char			*str;
+	size_t			fd;
+	struct s_gnl	*next;
+}				t_gnl;
+
+int					get_next_line(const int fd, char **line);
 
 void				*ft_memset(void *s, int c, size_t n);
 void				ft_bzero(void *s, size_t n);
