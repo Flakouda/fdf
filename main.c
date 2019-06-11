@@ -6,7 +6,7 @@
 /*   By: floakoud <floakoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/04/09 13:23:04 by floakoud          #+#    #+#             */
-/*   Updated: 2019/06/11 13:29:57 by floakoud         ###   ########.fr       */
+/*   Updated: 2019/06/11 14:48:03 by floakoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ int     main()
 	void	*win_ptr;
 
 	mlx_ptr = mlx_init();
-	win_ptr = mlx_new_window(mlx_ptr, 500, 500, "Fdf");
+	win_ptr = mlx_new_window(mlx_ptr, 500, 500, "FDF");
 	mlx_pixel_put(mlx_ptr, win_ptr, 250, 200, 0xFFFFFF);
 	mlx_key_hook(win_ptr, deal_key, (void *)0);
 	mlx_loop(mlx_ptr);
