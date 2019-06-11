@@ -6,7 +6,7 @@
 /*   By: floakoud <floakoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 12:08:17 by floakoud          #+#    #+#             */
-/*   Updated: 2019/06/11 15:11:52 by floakoud         ###   ########.fr       */
+/*   Updated: 2019/06/11 16:04:09 by floakoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,7 @@
 #include <unistd.h>
 #include <stdio.h>
 #include <stdlib.h>
+#include "libft/libft.h"
 
 typedef struct	s_e
 {	
@@ -31,6 +32,7 @@ typedef struct	s_e
 	int		Yincr;
 }				s_t;
 
-int     main();
+int     		main(int argc, char **argv);
+char			**file_to_tab(char *file);
 
 #endif

@@ -6,7 +6,7 @@
 #    By: floakoud <floakoud@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/11 13:46:42 by floakoud          #+#    #+#              #
-#    Updated: 2019/06/11 14:45:57 by floakoud         ###   ########.fr        #
+#    Updated: 2019/06/11 15:47:29 by floakoud         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ GREEN		= \033[0;32m
 
 NAME = FDF
 
-SRC = main.c
+SRC = main.c ft_file_to_tab.c
 
 OBJ = $(SRC:.c=.o)
 

@@ -6,7 +6,7 @@
 /*   By: floakoud <floakoud@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2018/11/28 09:04:16 by floakoud          #+#    #+#             */
-/*   Updated: 2019/06/11 15:23:31 by floakoud         ###   ########.fr       */
+/*   Updated: 2019/06/11 15:49:17 by floakoud         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@
 # include <unistd.h>
 # include <stdlib.h>
 # include <fcntl.h>
-# include "libft/libft.h"
+# include "libft.h"
 
 # define BUFF_SIZE 42
 
