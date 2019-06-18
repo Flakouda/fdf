@@ -6,7 +6,7 @@
 #    By: florientakoudad <florientakoudad@studen    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/11 13:46:42 by floakoud          #+#    #+#              #
-#    Updated: 2019/06/17 13:46:49 by florientako      ###   ########.fr        #
+#    Updated: 2019/06/19 01:00:42 by florientako      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,7 @@ GREEN		= \033[0;32m
 
 NAME = FDF
 
-SRC = main.c ft_checkfile.c
+SRC = main.c ft_checkfile.c ft_start.c ft_create_image.c ft_tab_coord.c
 
 LIB = libft/libft.a
 
