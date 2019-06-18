@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   fdf.h                                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: floakoud <floakoud@student.42.fr>          +#+  +:+       +#+        */
+/*   By: florientakoudad <florientakoudad@studen    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/06/11 12:08:17 by floakoud          #+#    #+#             */
-/*   Updated: 2019/06/11 16:04:09 by floakoud         ###   ########.fr       */
+/*   Updated: 2019/06/17 13:39:44 by florientako      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,6 +33,7 @@ typedef struct	s_e
 }				s_t;
 
 int     		main(int argc, char **argv);
-char			**file_to_tab(char *file);
+int				ft_checkfile(char *str);
+
 
 #endif

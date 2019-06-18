@@ -3,10 +3,10 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: floakoud <floakoud@student.42.fr>          +#+  +:+       +#+         #
+#    By: florientakoudad <florientakoudad@studen    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/06/11 13:46:42 by floakoud          #+#    #+#              #
-#    Updated: 2019/06/11 15:47:29 by floakoud         ###   ########.fr        #
+#    Updated: 2019/06/17 13:46:49 by florientako      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,7 +24,9 @@ GREEN		= \033[0;32m
 
 NAME = FDF
 
-SRC = main.c ft_file_to_tab.c
+SRC = main.c ft_checkfile.c
+
+LIB = libft/libft.a
 
 OBJ = $(SRC:.c=.o)
 
@@ -35,7 +37,7 @@ $(NAME) :
 	@echo "creation de libft [$(GREEN)OK$(END)]"
 	@gcc -Wall -Wextra -Werror -c $(SRC)
 	@echo "creation fichier objet [$(GREEN)OK$(END)]"
-	@gcc -o $(NAME) $(OBJ) -L libft -lft -lm -lmlx -framework OpenGL -framework AppKit
+	@gcc -o $(NAME) $(OBJ) $(LIB)
 	@echo "creation executable [$(GREEN)OK$(END)]"
 
 clean :
